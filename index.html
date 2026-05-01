@@ -1,0 +1,69 @@
+<!-- Simple portfolio website -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+  
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="branding">
+                <img src="WhatsApp Image 2026-05-01 at 19.46.08.jpeg" alt="Profile photo" class="profile-pic">
+                <div>
+                    <h1>Welcome to My Portfolio</h1>
+                    <p class="muted">Aspiring Web & Cybersecurity Engineer</p>
+                </div>
+            </div>
+
+            <nav aria-label="Primary navigation">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="about">
+                <h2>About Me</h2>
+                <p>Hello! I'm an aspiring web and cybersecurity engineer with a passion for creating beautiful and functional websites. I have experience in HTML, CSS, and JavaScript, and I'm always eager to learn new technologies.</p>
+            </section>
+
+            <section id="projects">
+                <h2>Projects</h2>
+                <div class="project">
+                    <h3>Project One</h3>
+                    <p>A simple portfolio website built with HTML and CSS.</p>
+                </div>
+                <div class="project">
+                    <h3>Project Two</h3>
+                    <p>A responsive web application built with React and Node.js.</p>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>Feel free to reach out at <a href="mailto:kariukicolins8252@gmail.com">kariukicolins8252@gmail.com</a>.</p>
+                <p><a href="https://wa.me/254796904230" target="_blank" rel="noopener">WhatsApp</a></p>
+                <p><a href="tel:+254796904230">+254796904230</a></p>
+                <button type="button" aria-label="Open contact form">Send Message</button>
+            </section>
+        </main>
+
+        <footer>
+            <p class="muted">© <span id="year"></span> My Portfolio</p>
+        </footer>
+    </div>
+
+    <script>
+        // small enhancement: set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
